@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+/* Basis Theory's palette: black ground, warm off-white ink, lime as the only accent. */
+@theme {
+  --color-ground: #000000;
+  --color-surface: #111113;
+  --color-surface-raised: #18181b;
+  --color-ink: #f4f4f1;
+  --color-ink-muted: #8a8a94;
+  --color-ink-faint: #5d5d66;
+  --color-rule: rgba(255, 255, 255, 0.08);
+  --color-rule-strong: rgba(255, 255, 255, 0.14);
+  --color-lime: #bff660;
+  --color-lime-tint: rgba(191, 246, 96, 0.1);
+  --color-warn: #f6b860;
+  --color-danger: #f67272;
+  --color-danger-tint: rgba(246, 114, 114, 0.1);
+
+  --font-display: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-space-mono), ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-lime);
+    color: #000;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-rise {
+  animation: rise 240ms ease-out both;
+}

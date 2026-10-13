@@ -1,0 +1,6 @@
+{
+  "name": "halden-store",
+  "private": true,
+  "type": "module",
+  "description": "A demonstration merchant checkout. Deployed separately from the console, the way a real merchant is."
+}

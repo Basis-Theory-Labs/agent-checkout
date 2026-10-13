@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "3.0.62",
+    "@browserbasehq/sdk": "2.21.0",
+    "ai": "7.0.126",
+    "playwright-core": "1.59.1",
+    "zod": "4.6.5"
+  }
+}

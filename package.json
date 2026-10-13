@@ -1,0 +1,35 @@
+{
+  "name": "agent-checkout",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Basis Theory Browser Proxy and PCI Agent Runtimes, end to end: a card paid into a merchant's checkout by automation and by an AI agent, without either ever holding the card.",
+  "scripts": {
+    "setup": "node --env-file=.env.local scripts/setup.mjs",
+    "card": "node --env-file=.env.local scripts/setup.mjs --card",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@browserbasehq/sdk": "2.21.0",
+    "next": "16.3.5",
+    "playwright-core": "1.59.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
