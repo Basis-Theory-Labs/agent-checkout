@@ -129,14 +129,14 @@ mandate in code before it acts. The model never sees the card.
 ## What is in here
 
 ```
-src/flows/intercept.ts         Intercept, run from your server with Playwright.
-src/flows/handoff.ts           Inject and the agent: open a session, sign the mandate, invoke the Reactor.
-src/lib/mandate.ts             The signed mandate: what the customer approved.
-reactors/checkout-injector/    Browser Proxy · Inject Reactor (fixed code).
-reactors/checkout-agent/       PCI Agent Runtimes Reactor (an agent with three narrow tools).
-scripts/setup.mjs              Creates the application, the Reactors and a test card on your tenant.
-store/                         Halden, the demo merchant. Deployed on its own, as a real merchant is.
-src/app, src/components        The console.
+src/flows/intercept.ts        Intercept, run from your server with Playwright.
+src/flows/handoff.ts          Inject and the agent: session, mandate, Reactor call.
+src/lib/mandate.ts            The signed mandate: what the customer approved.
+reactors/checkout-injector/   The Inject Reactor (fixed code).
+reactors/checkout-agent/      The agent Reactor (three narrow tools).
+scripts/setup.mjs             Creates the application, the Reactors and a test card.
+store/                        Halden, the demo merchant, deployed on its own.
+src/app, src/components       The console.
 ```
 
 The Reactors are the code from the guides, unchanged apart from comments, so
