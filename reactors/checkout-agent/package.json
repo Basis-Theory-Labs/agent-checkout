@@ -4,6 +4,6 @@
     "@browserbasehq/sdk": "2.21.0",
     "ai": "7.0.126",
     "playwright-core": "1.59.1",
-    "zod": "4.6.5"
+    "zod": "4.6.6"
   }
 }
